@@ -1,0 +1,11 @@
+{
+  "name": "thetestingfacility",
+  "routes": [
+    {
+      "src": "/.*",
+      "dest": "/index.html"
+    }
+  ],
+  "buildCommand": "",
+  "publishDirectory": "."
+}
