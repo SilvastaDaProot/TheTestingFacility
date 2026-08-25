@@ -3,99 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cool Experiments</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        section {
-            padding: 2em;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>The Testing Facility — Experiments, Servers &amp; 3D Printing</title>
+    <meta name="description" content="The Testing Facility — a personal playground of experiments: Proxmox virtualization, self-hosted services, and 3D printing.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧪</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Welcome to My Cool Experiments</h1>
-    <p>Discover my latest projects and experiments</p>
-</header>
+    <header id="top">
+        <div class="container">
+            <div class="logo">
+                <h1>The Testing Facility</h1>
+                <p>Where ideas get broken on purpose</p>
+            </div>
+            <nav aria-label="Primary">
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<nav>
-    <a href="#about">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">⚗️ Live experiments in progress</span>
+                <h1>Welcome to the <span class="accent">Testing Facility</span></h1>
+                <p>Self-hosted servers, virtual machines, and plastic-melting machines — all running under one roof. No production environments were harmed in the making of this site.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">See what's running</a>
+                    <a href="#about" class="btn-ghost">About the lab</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>I'm passionate about creating and experimenting with technology. My current focus is on setting up a robust server environment using Proxmox, running multiple virtual machines for various purposes.</p>
-</section>
+    <section id="projects" class="services">
+        <div class="container">
+            <h2>Current Experiments</h2>
+            <p class="section-sub">A rotating cast of hardware and services, most of which are held together by Proxmox and hope.</p>
+            <div class="service-grid">
 
-<section id="projects">
-    <h2>Projects</h2>
-    <!-- Add your projects here -->
-    <div class="project">
-        <h3>Proxmox Setup</h3>
-        <p>I'm currently running Proxmox on two servers and a quorum device (Raspberry Pi). This setup allows me to host multiple virtual machines for various purposes.</p>
-        <ul>
-            <li><strong>Game Hosting:</strong> Running dedicated game servers.</li>
-            <li><strong>Storage Host:</strong> Providing reliable storage solutions.</li>
-            <li><strong>VPN Hosting:</strong> Offering secure VPN services.</li>
-            <li><strong>DNS/AdBlock:</strong> Managing DNS and blocking ads.</li>
-        </ul>
-    </div>
-    <div class="project">
-        <h3>3D Printing</h3>
-        <p>I enjoy 3D printing and creating custom objects. My latest projects include...</p>
-    </div>
-    <!-- Add more projects as needed -->
-</section>
+                <article class="service-card">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><path d="M6 8h4M6 11h7"/></svg>
+                    </div>
+                    <h3>Proxmox Cluster</h3>
+                    <p>Two servers + a Raspberry Pi quorum device, hosting a fleet of virtual machines for everything from game servers to DNS.</p>
+                    <ul class="card-list">
+                        <li><strong>Game Hosting</strong> — dedicated game servers</li>
+                        <li><strong>Storage Host</strong> — reliable storage solutions</li>
+                        <li><strong>VPN Hosting</strong> — secure VPN services</li>
+                        <li><strong>DNS / AdBlock</strong> — network-wide ad blocking</li>
+                    </ul>
+                </article>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: Info@thetestingfacility.co.uk</p>
-    <p>GitHub: <a href="https://github.com/SilvastaDaProot" target="_blank">SilvastaDaProot </a></p>
+                <article class="service-card">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg>
+                    </div>
+                    <h3>3D Printing</h3>
+                    <p>Custom objects, functional parts, and the occasional benchy. The printer is the only machine in the facility that produces physical evidence.</p>
+                    <ul class="card-list">
+                        <li><strong>Custom parts</strong> — designed, printed, iterated</li>
+                        <li><strong>Functional prints</strong> — things that actually get used</li>
+                        <li><strong>Ongoing calibration</strong> — the eternal quest for perfect first layers</li>
+                    </ul>
+                </article>
 
-</section>
+                <article class="service-card">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+                    </div>
+                    <h3>More Coming Soon</h3>
+                    <p>The facility is always expanding. New experiments are queued, half-wired, and waiting for a free weekend.</p>
+                    <ul class="card-list">
+                        <li><strong>Status</strong> — under construction</li>
+                        <li><strong>ETA</strong> — whenever it's ready</li>
+                    </ul>
+                </article>
 
-<footer id="footer">
-    <p>&copy; <span id="year"></span> All rights reserved.</p>
-</footer>
+            </div>
+        </div>
+    </section>
 
-<script>
-    // JavaScript to dynamically update the year in the footer const currentYear = new Date().getFullYear();
-    document.getElementById('year').textContent = currentYear;
-</script>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>About the Facility</h2>
+                <p>I'm passionate about creating and experimenting with technology. My current focus is on building a robust self-hosted environment — Proxmox on two servers with a Raspberry Pi quorum device, running multiple virtual machines for various purposes.</p>
+                <p>Everything here is a testbed: services get broken, fixed, and occasionally improved. That's the point.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact the Facility</h3>
+                    <p><strong>Email:</strong> <a href="mailto:Info@thetestingfacility.co.uk">Info@thetestingfacility.co.uk</a></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/SilvastaDaProot" target="_blank" rel="noopener">SilvastaDaProot</a></p>
+                    <p><strong>Response time:</strong> faster than a failed print job</p>
+                </div>
+                <div class="contact-aside">
+                    <p>Questions, ideas, or want to know what's currently running in the lab?</p>
+                    <a href="mailto:Info@thetestingfacility.co.uk" class="btn-primary">Send an email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> The Testing Facility. All rights reserved.</p>
+            <p class="footer-tag">🧪 Built by breaking things on purpose.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dynamically update the year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 
 </body>
 </html>
