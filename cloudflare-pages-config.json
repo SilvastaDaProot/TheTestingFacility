@@ -2,6 +2,14 @@
   "name": "thetestingfacility",
   "routes": [
     {
+      "src": "/docker.html",
+      "dest": "/docker.html"
+    },
+    {
+      "src": "/projects.html",
+      "dest": "/projects.html"
+    },
+    {
       "src": "/.*",
       "dest": "/index.html"
     }

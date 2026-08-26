@@ -407,3 +407,52 @@ footer {
         animation: none !important;
     }
 }
+
+/* ── Page variants ─────────────────────────────── */
+/* Compact hero for sub-pages */
+.hero-compact {
+    padding: 130px 0 70px;
+}
+
+.hero-compact .hero-content p {
+    margin-bottom: 0;
+}
+
+/* Alternate section background */
+.services-alt {
+    background-color: #eef1f5;
+}
+
+/* Active nav link */
+nav ul li a.active {
+    color: #2c5da7;
+    border-bottom: 2px solid #2c5da7;
+    padding-bottom: 2px;
+}
+
+/* Dimmmed icon for parked/resting cards */
+.card-icon-dim {
+    background: linear-gradient(135deg, #8a94a6, #aeb6c4);
+}
+
+/* Status pills */
+.status-live {
+    color: #1a7f37;
+    font-weight: 700;
+}
+
+.status-parked {
+    color: #8a94a6;
+    font-weight: 700;
+}
+
+/* Inline code in cards */
+.service-card code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82em;
+    background: #f0f2f5;
+    border: 1px solid #e2e6ea;
+    border-radius: 4px;
+    padding: 1px 5px;
+    color: #c0392b;
+}
